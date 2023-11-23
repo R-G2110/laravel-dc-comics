@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    li {
+        margin: 10px 0;
+    }
+}
+
 img {
     width: 100%;
 }
@@ -12,8 +22,33 @@ img {
     border: none;
     margin: 5px 0;
     border-radius: 5px;
-    padding: 4px;
+    padding: 5px;
     cursor: pointer;
+}
+
+.insert-btn {
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: 1px solid green;
+    background: none;
+    color: green;
+    &:hover {
+        background: green;
+        color: white;
+
+    }
+}
+.back-btn {
+    margin: 20px 0;
+    padding: 10px 15px;
+    border: 1px solid purple;
+    background: none;
+    color: purple;
+    &:hover {
+        background: purple;
+        color: white;
+
+    }
 }
 
 .container {

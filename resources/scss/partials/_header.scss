@@ -1,1 +1,15 @@
-
+header {
+    height: 80px;
+    .container {
+        height: 100%;
+        ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+    }
+}
