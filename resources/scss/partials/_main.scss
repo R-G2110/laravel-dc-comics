@@ -1,0 +1,41 @@
+main {
+    .cards-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            cursor: pointer;
+            margin: 10px 0;
+            overflow: hidden;
+            width: 300px;
+            height: 410px;
+            position: relative;
+            object-fit: contain;
+            &:hover img {
+                scale: 1.2;
+                transition: all 4s;
+            }
+            &:hover .overlay {
+                display: block;
+
+            }
+
+            .overlay {
+                display: none;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+                height: 110px;
+                width: 100%;
+                color: white;
+
+                .comic-info {
+                    padding: 5px 10px;
+                }
+            }
+
+        }
+    }
+}

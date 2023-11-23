@@ -1,31 +1,23 @@
 @extends('layouts.main')
 
 @section('content')
-  <table class="table table-bordered border-primary">
-    <thead>
-      <tr>
-        <th scope="col">Title</th>
-        <th scope="col">Description</th>
-        <th scope="col">thumb</th>
-        <th scope="col">price</th>
-        <th scope="col">series</th>
-        <th scope="col">sale_date</th>
-        <th scope="col">type</th>
-      </tr>
-    </thead>
-    <tbody>
-        @foreach ($comics as $comic)
-            <tr>
-            <td>{{ $comic->title }}</td>
-            <td>{{ $comic->description }}</td>
-            <td>{{ $comic->thumb }}</td>
-            <td>{{ $comic->price }}</td>
-            <td>{{ $comic->series }}</td>
-            <td>{{ $comic->sale_date }}</td>
-            <td>{{ $comic->type }}</td>
-            </tr>
-        @endforeach
 
-    </tbody>
-  </table>
+  <div class="cards-wrapper">
+    @foreach ($comics as $comic)
+
+    <div class="card">
+        <img src="{{ $comic->thumb }}" alt="">
+
+        <div class="overlay">
+            <div class="comic-info">
+                <h4>{{ $comic->title }}</h4>
+                <h6>{{ $comic->type }}</h6>
+                <h5>{{ $comic->price }}</h5>
+                <a href=""><button class="btn">More info</button></a>
+            </div>
+        </div>
+    </div>
+    @endforeach
+  </div>
+
 @endsection
