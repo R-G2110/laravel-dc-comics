@@ -5,7 +5,11 @@
 }
 
 a {
+    // color: white;
     text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 ul {
     list-style: none;
@@ -16,6 +20,33 @@ ul {
 
 img {
     width: 100%;
+}
+
+body {
+    color: purple;
+    // background-image: url(https://www.player.it/wp-content/uploads/2023/02/4910e77db2b74cd27569d30bd0f8b7e1.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    background-color: black;
+}
+
+// .white {
+//     color: white;
+// }
+
+.row {
+    margin: 10px 0;
+    display: flex;
+
+}
+
+.col {
+    margin: 0 10px;
+}
+.form-control {
+    height: 2rem;
+    width: 450px;
+    padding: 10px;
 }
 
 .btn {
@@ -30,13 +61,17 @@ img {
     margin: 20px 0;
     padding: 10px 15px;
     border: 1px solid green;
-    background: none;
-    color: green;
+    background: green;
+    color: white;
     &:hover {
-        background: green;
         color: white;
+        background: purple;
+        border: 1px solid purple;
 
     }
+}
+.delete-btn {
+    display: inline-block;
 }
 .back-btn {
     margin: 20px 0;
@@ -54,4 +89,34 @@ img {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+.navigator {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    .page-item {
+        border: 1px solid black;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+        color: purple;
+
+        border: 1px solid purple;
+        a {
+            color: purple;
+        }
+        &:hover {
+            background: purple;
+            color: white;
+        }
+        &:hover a {
+            color: white;
+        }
+    }
 }
