@@ -22,7 +22,7 @@ main {
                 display: block;
             }
             &:hover {
-                border: 5px solid purple;
+                border: 5px solid #008000;
             }
 
             .overlay {
@@ -31,9 +31,9 @@ main {
                 bottom: 0;
                 left: 0;
                 background-color: black;
-                height: 120px;
+                height: 130px;
                 width: 100%;
-                color: white;
+
 
                 .comic-info {
                     padding: 10px 10px;
@@ -41,12 +41,13 @@ main {
                         width: 100%;
                         button {
                             color: white;
-                            background: none;
-                            border: 1px solid white
+                            background: #008000;
+                            border: 1px solid #008000;
                         }
                         button:hover {
-                            color: black;
-                            background: white;
+                            color: white;
+                            background: purple;
+                            border: 1px solid purple;
 
                         }
                     }

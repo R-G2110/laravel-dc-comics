@@ -23,7 +23,7 @@
 
                         <div class="buttons-container">
                             @include('partials.infoButton')
-                            @include('partials.editButton')
+                            <a href="{{ route('comics.edit', $comic) }}"><button class="btn"><i class="fa-solid fa-pen"></i> Edit</button></a>
                             @include('partials.deleteButton')
                         </div>
 

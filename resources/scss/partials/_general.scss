@@ -5,10 +5,11 @@
 }
 
 a {
-    // color: white;
+    color: #008000;
     text-decoration: none;
     &:hover {
         text-decoration: underline;
+        color: purple;
     }
 }
 ul {
@@ -23,7 +24,7 @@ img {
 }
 
 body {
-    color: purple;
+    color: #008000;
     // background-image: url(https://www.player.it/wp-content/uploads/2023/02/4910e77db2b74cd27569d30bd0f8b7e1.jpg);
     // background-repeat: no-repeat;
     // background-size: cover;
@@ -60,8 +61,8 @@ body {
 .insert-btn {
     margin: 20px 0;
     padding: 10px 15px;
-    border: 1px solid green;
-    background: green;
+    border: 1px solid #008000;
+    background: #008000;
     color: white;
     &:hover {
         color: white;
@@ -71,17 +72,23 @@ body {
     }
 }
 .delete-btn {
+    padding: 10px 15px;
     display: inline-block;
+    &::before {
+        margin: 0;
+    }
 }
+
 .back-btn {
     margin: 20px 0;
     padding: 10px 15px;
-    border: 1px solid purple;
-    background: none;
-    color: purple;
+    border: 1px solid #008000;
+    background: #008000;
+    color: white;
     &:hover {
         background: purple;
-        color: white;
+        border: 1px solid purple;
+
 
     }
 }
@@ -105,18 +112,17 @@ body {
         padding: 8px;
         border-radius: 5px;
         cursor: pointer;
-        color: purple;
+        color: white;
+        background: #008000;
 
-        border: 1px solid purple;
+        border: 1px solid #008000;
         a {
-            color: purple;
+            color: white;
         }
         &:hover {
             background: purple;
-            color: white;
-        }
-        &:hover a {
-            color: white;
+            border: 1px solid purple;
+
         }
     }
 }

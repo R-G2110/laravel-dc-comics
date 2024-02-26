@@ -2,6 +2,8 @@
 
 @section('content')
 
-  <h1>Contatti</h1>
+  <h1>Contacts</h1>
+  <h3>Argel Dela Cruz</h3>
+  <h4>- argeldelacruz86@gmail.com</h4>
 
 @endsection
