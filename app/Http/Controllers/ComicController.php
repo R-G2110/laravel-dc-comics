@@ -36,6 +36,13 @@ class ComicController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required|min:3'
+
+        ],[
+            'title.required' => 'Devi inserire il titolo del prodotto',
+            'title.min' => 'Il titolo del prodotto deve avere almeno 3 caratteri',
+        ]);
         $form_data = $request->all();
         $new_comic = new Comic();
         $new_comic->fill($form_data);
@@ -100,6 +107,6 @@ class ComicController extends Controller
     public function destroy(Comic $comic)
     {
         $comic->delete();
-        return redirect()->route('comics.index')->with('deleted', "prodotto $comic->title è stato eliminato correttamente!");
+        return redirect()->route('comics.index')->with('deleted', "Il prodotto $comic->title è stato eliminato correttamente!");
     }
 }

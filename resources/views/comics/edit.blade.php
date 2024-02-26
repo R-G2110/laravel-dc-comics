@@ -7,7 +7,7 @@
         @method('PUT')
         <div class="row">
             <div class="col">
-              <input type="text" class="form-control" placeholder="Title" name="title" value="{{ $comic->title }}">
+              <input type="text" class="form-control" placeholder="Title" name="title" value="{{ old('title', $comic->title) }}">
             </div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Type" name="type" value="{{ $comic->type }}">

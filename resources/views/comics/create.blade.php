@@ -2,6 +2,17 @@
 
 @section('content')
     <h1>Product insertion</h1>
+
+    @if ($errors->any())
+        <div class="alert alert-danger" role="alert">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+
     <form action="{{ route('comics.store') }}" method="POST">
         @csrf
         <div class="row">
@@ -9,8 +20,11 @@
               <input type="text" class="form-control" placeholder="Title" name="title">
             </div>
             <div class="col">
-              <input type="text" class="form-control" placeholder="Type" name="type">
+              <input type="text" class="form-control" placeholder="Type" name="type" value="{{ old('title') }}">
             </div>
+            @error('title')
+                <p class="text-danger">{{ $message }}</p>
+            @enderror
         </div>
         <div class="row">
             <div class="col">

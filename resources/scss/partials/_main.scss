@@ -14,6 +14,7 @@ main {
             height: 420px;
             position: relative;
             object-fit: contain;
+            border: 5px solid #008000;
             &:hover img {
                 scale: 1.2;
                 transition: all 4s;
@@ -22,7 +23,7 @@ main {
                 display: block;
             }
             &:hover {
-                border: 5px solid #008000;
+                border: 5px solid purple;
             }
 
             .overlay {

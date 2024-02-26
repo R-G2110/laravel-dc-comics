@@ -20,7 +20,7 @@
         </div>
 
         <div class="social">
-            <h5>Trovaci anche su:</h5>
+            <h5>Also find us on:</h5>
             <nav>
                 <ul class="menu flex">
                     @foreach ($menu_social as $item)

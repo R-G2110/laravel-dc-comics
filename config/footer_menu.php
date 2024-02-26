@@ -4,15 +4,15 @@ return[
     "menuPrivacy" => [
         [
             "href" => '',
-		    "text" => 'Informazioni legali'
+		    "text" => 'Legal information'
         ],
         [
             "href" => '',
-		    "text" => 'Informativa sulla privacy'
+		    "text" => 'Privacy Policy'
         ],
         [
             "href" => '',
-		    "text" => 'Diritto di recesso'
+		    "text" => 'Rights of withdrawal'
         ]
     ],
     'menuSocial' => [

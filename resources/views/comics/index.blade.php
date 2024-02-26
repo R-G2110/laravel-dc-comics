@@ -1,11 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>Lista prodotti</h1>
+    <h1>Product List</h1>
 
     @if (session('deleted'))
         <div class="alert alert-success" role="alert">
-            {{ session('deleted') }}
+            <h3>{{ session('deleted') }}</h3>
         </div>
     @endif
 
